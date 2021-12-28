@@ -1,0 +1,55 @@
+package MsBoleto;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  xmlrtl,
+  soaprtl,
+  dbrtl,
+  inet,
+  vclimg,
+  vclwinx,
+  vcldb;
+
+contains
+  Services.Credential in 'src\Services\Services.Credential.pas',
+  Boleto.Interfaces in 'src\Boleto.Interfaces.pas',
+  Boleto.Configuracao.Cedente in 'src\Configuracao\Boleto.Configuracao.Cedente.pas',
+  Boleto in 'src\Boleto.pas',
+  Boleto.Configuracao.Config in 'src\Configuracao\Boleto.Configuracao.Config.pas',
+  Boleto.Component.Interfaces in 'src\Component\Boleto.Component.Interfaces.pas',
+  Boleto.Component in 'src\Component\Boleto.Component.pas',
+  Boleto.Configuracao.Banco in 'src\Configuracao\Boleto.Configuracao.Banco.pas',
+  Boleto.Configuracao.Titulo in 'src\Configuracao\Boleto.Configuracao.Titulo.pas',
+  Boleto.Configuracao.NovoTitulo in 'src\Configuracao\Boleto.Configuracao.NovoTitulo.pas',
+  Boleto.Configuracao.Sacado in 'src\Configuracao\Boleto.Configuracao.Sacado.pas';
+
+end.
+
