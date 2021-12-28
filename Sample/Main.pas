@@ -46,13 +46,13 @@ begin
     .LocalPagamento('Pagar em qualquer agencia até o vencimento')
    .&End
    .Cedente
-    .CNPJCPF('21959287000151')
+    .CNPJCPF('99999999999999')
     .Conta('1234')
     .ContaDigito('0')
     .Agencia('5555')
     .AgenciaDigito('1')
     .Telefone('(42) 9 9992-1514')
-    .FantasiaCedente('MADALOZZO SISTEMAS')
+    .FantasiaCedente('NOME DO CEDENTE')
    .&End
    .Titulo
     .LimparListaBoletos
@@ -70,34 +70,12 @@ begin
       .NossoNumero('878787')
       .SeuNumero('1234')
       .Sacado
-       .Nome('Paulo Madalozzo')
-       .CNPJCPF('03805396910')
-       .Logradouro('Rua Pedro Safraider')
-       .Numero('65')
-       .CEP('84060092')
-       .Cidade('Ponta Grossa')
-       .UF('PR')
-       .TipoAvalista(pNenhum)
-      .&End
-     .add
-      .Carteira('A')
-      .CodigoGeracao('1')
-      .Vencimento(date)
-      .ValorDocumento(1500)
-      .Aceite(atSim)
-      .DataProcessamento(Date)
-      .DataDocumento(Date)
-      .NumeroDocumento('1025')
-      .ValorAbatimento(1500)
-      .NossoNumero('878787')
-      .SeuNumero('1234')
-      .Sacado
-       .Nome('Paulo Madalozzo')
-       .CNPJCPF('03805396910')
-       .Logradouro('Rua Pedro Safraider')
-       .Numero('65')
-       .CEP('84060092')
-       .Cidade('Ponta Grossa')
+       .Nome('Nome Completo')
+       .CNPJCPF('99999999999')
+       .Logradouro('Rua Pedro Santos')
+       .Numero('99')
+       .CEP('9999999')
+       .Cidade('Nome da Cidade')
        .UF('PR')
        .TipoAvalista(pNenhum)
       .&End
