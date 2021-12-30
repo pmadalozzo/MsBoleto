@@ -10,6 +10,7 @@ uses
 type
  TBanco = class(TInterfacedObject, iBanco)
  private
+  [weak]
   FParent: iBoleto;
  public
   constructor Create(Parent: iBoleto);

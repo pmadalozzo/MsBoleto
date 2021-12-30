@@ -8,6 +8,7 @@ uses
 type
   TNovoTitulo = class(TInterfacedObject, iNovoTitulo)
     private
+     [weak]
      FParent : iTitulo;
      FComponent : iBoleto;
      FTitulo : TACBrTitulo;

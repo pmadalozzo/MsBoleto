@@ -10,6 +10,7 @@ uses
 type
  TSacado = class(TInterfacedObject, iSacado)
  private
+  [weak]
   FParent: iNovoTitulo;
   FTitulo: TACBrTitulo;
  public

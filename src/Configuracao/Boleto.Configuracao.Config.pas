@@ -8,6 +8,7 @@ uses
 type
   TConfig = class(TInterfacedObject, iConfiguracao)
    private
+     [weak]
      FParent : iBoleto;
    public
      Constructor Create(Parent : iBoleto);

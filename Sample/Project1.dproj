@@ -83,9 +83,9 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <DCC_UnitSearchPath>D:\Software\Carbon\cGestao\src\Plugin\Boleto\Services;D:\Software\Carbon\cGestao\src\Plugin\Boleto\Configuracao;D:\Software\Carbon\cGestao\src\Plugin\Boleto;D:\Software\Carbon\cGestao\src\Plugin\Boleto\Win32\Debug;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_UnitSearchPath>D:\Componentes\Madalozzo\MsBoleto\src;D:\Componentes\Madalozzo\MsBoleto\src\Component;D:\Componentes\Madalozzo\MsBoleto\src\Configuracao;D:\Componentes\Madalozzo\MsBoleto\src\Services;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>

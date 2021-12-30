@@ -46,14 +46,16 @@ begin
     .LocalPagamento('Pagar em qualquer agencia até o vencimento')
    .&End
    .Cedente
-    .CNPJCPF('99999999999999')
+    .CNPJCPF('94.147.464/0001-79')
     .Conta('1234')
     .ContaDigito('0')
     .Agencia('5555')
     .AgenciaDigito('1')
     .Telefone('(42) 9 9992-1514')
     .FantasiaCedente('NOME DO CEDENTE')
-   .&End
+   .&End;
+
+   FBoleto
    .Titulo
     .LimparListaBoletos
     .Novo

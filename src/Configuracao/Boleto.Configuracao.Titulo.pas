@@ -9,6 +9,7 @@ uses
 type
   TTitulo = class(TInterfacedObject, iTitulo)
     private
+     [weak]
      FParent : iBoleto;
      FNovoTitulo : iNovoTitulo;
     public

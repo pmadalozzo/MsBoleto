@@ -10,6 +10,7 @@ uses
 type
   TCedente = class(TInterfacedObject, iCedente)
    private
+     [weak]
      FParent : iBoleto;
    public
     constructor Create(Parent : iBoleto);
