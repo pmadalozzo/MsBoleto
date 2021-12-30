@@ -108,10 +108,10 @@ type
    function ValorDocumento(aValue : Real) : iNovoTitulo;
    function LocalPagamento(aValue : string) : iNovoTitulo;
    function TipoOcorrenciaOriginal(aValue : TACBrTipoOcorrencia) : iNovoTitulo;
-   function Instrocao1(aValue : string) : iNovoTitulo;
+   function Instrucao1(aValue : string) : iNovoTitulo;
    function Instrucao2(aValue : string) : iNovoTitulo;
    function PercMulta(aValue : real) : iNovoTitulo;
-   function ValorDescontro(aValue : real) : iNovoTitulo;
+   function ValorDesconto(aValue : real) : iNovoTitulo;
    function DataDesconto(aValue : TDate) : iNovoTitulo;
    function ValorAbatimento(aValue : real) : iNovoTitulo;
    function DataAbatimento(aValue : TDate) : iNovoTitulo;
