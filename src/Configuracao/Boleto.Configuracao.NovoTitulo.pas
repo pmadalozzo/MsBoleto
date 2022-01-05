@@ -197,9 +197,7 @@ end;
 
 function TNovoTitulo.Sacado : iSacado;
 begin
-  if not Assigned(FSacado) then
-   FSacado:= TSacado.New(Self).Titulo(FTitulo);
-
+  FSacado:= TSacado.New(Self).Titulo(FTitulo);
   Result:= FSacado;
 end;
 

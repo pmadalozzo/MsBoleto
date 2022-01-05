@@ -81,10 +81,31 @@ begin
        .UF('PR')
        .TipoAvalista(pNenhum)
       .&End
+     .add
+      .Carteira('A')
+      .CodigoGeracao('1')
+      .Vencimento(date)
+      .ValorDocumento(1500)
+      .Aceite(atSim)
+      .DataProcessamento(Date)
+      .DataDocumento(Date)
+      .NumeroDocumento('1025')
+      .ValorAbatimento(1500)
+      .NossoNumero('878787')
+      .SeuNumero('1234')
+      .Sacado
+       .Nome('Nome Completo')
+       .CNPJCPF('99999999999')
+       .Logradouro('Rua Pedro Santos')
+       .Numero('99')
+       .CEP('9999999')
+       .Cidade('Nome da Cidade')
+       .UF('PR')
+       .TipoAvalista(pNenhum)
+      .&End
      .&End
    .&End
-  .Imprimir
-  .GerarRemessa;
+  .Imprimir;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

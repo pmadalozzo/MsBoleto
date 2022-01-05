@@ -23,6 +23,9 @@ type
 
 implementation
 
+uses
+  ACBrBoletoConversao;
+
 { TComponent }
 
 function TComponent.Boleto: TACBrBoleto;
@@ -31,6 +34,8 @@ begin
     FACBRBoleto:= TACBrBoleto.Create(nil);
 
   FACBRBoleto.ACBrBoletoFC:= FACBRBoletoFC;
+  FACBRBoleto.ACBrBoletoFC.Filtro:= fiNenhum;
+  FACBRBoleto.ACBrBoletoFC.LayOut:= lPadrao;
 
   Result:= FACBRBoleto;
 end;
